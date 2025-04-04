@@ -1,0 +1,30 @@
+{
+  "name": "zerodae-apps",
+  "version": "0.0.0",
+  "description": "A monorepo for various ExpressJS apps I've made.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "dotenvx run -- node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaJoker29/zerodae-apps.git"
+  },
+  "type": "module",
+  "author": "Dewitt A. Buckingham, III",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DaJoker29/zerodae-apps/issues"
+  },
+  "homepage": "https://github.com/DaJoker29/zerodae-apps#readme",
+  "dependencies": {
+    "@dotenvx/dotenvx": "^1.39.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "mongoose": "^8.13.2",
+    "node-cron": "^3.0.3"
+  }
+}

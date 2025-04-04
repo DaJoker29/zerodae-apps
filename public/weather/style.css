@@ -1,0 +1,91 @@
+body {
+    background-color: #1e1e1e;
+    color: #e1e1e1;
+    font-family: system-ui, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-weight: 600;
+}
+
+a,
+a:link,
+a:visited {
+    color: aqua;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+.title {
+    display: grid;
+    place-content: center;
+}
+
+.current {
+    display: grid;
+    place-content: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: aqua;
+    color: #1e1e1e;
+    font-size: 1.4rem;
+}
+
+.recent-updates {
+    --min: 15ch;
+    --gap: 1rem;
+
+    min-width: 50vw;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    gap: var(--gap);
+    flex-flow: wrap;
+    flex-direction: column;
+}
+
+.temperature {
+    font-size: 4em;
+    margin: 0 auto;
+}
+
+.weatherCode {
+    font-size: 1.2em;
+}
+
+.last-updated {
+    font-size: .75em;
+}
+
+.current-cells {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.current-cells>div {
+    border: 1px solid rgba(127, 127, 127, .15);
+    background-color: #1e1e1e;
+    color: aqua;
+    border-radius: 4px;
+    text-align: left;
+    padding: .5rem 1rem;
+    flex: 1 1 100px;
+}
+
+.current-cells>div>* {
+    margin: 0;
+}
+
+.current-cells>div>:last-child {
+    font-size: .75rem;
+}
