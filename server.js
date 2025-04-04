@@ -6,7 +6,7 @@ import bodyParser from "body-parser";
 import weatherAPI from "./apps/weather/routes.mjs";
 
 const app = express();
-const PORT = process.env.EXPRESS_PORT || 3000;
+const PORT = process.env.PORT || 3000;
 const HOST = process.env.HOST || "localhost";
 const DB_URL = process.env.MONGO_URI;
 
