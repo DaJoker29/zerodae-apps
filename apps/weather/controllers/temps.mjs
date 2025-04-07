@@ -1,11 +1,5 @@
-import Temps from "./model.mjs";
+import Temps from "../models/temps.mjs";
 import { schedule } from "node-cron";
-
-const deleteAll = async function (req, res, next) {
-  await Temps.deleteMany({});
-  res.status(200);
-  res.send("All records erased");
-};
 
 const saveTemp = async function (req, res, next) {
   saveWeatherData(req.params.zip);
@@ -28,7 +22,7 @@ const fetchAll = async function (req, res, next) {
   res.json(temps);
 };
 
-export { deleteAll, saveTemp, fetchCurrent, fetchRecent, fetchAll };
+export default { saveTemp, fetchCurrent, fetchRecent, fetchAll };
 
 async function saveWeatherData(zip) {
   try {

@@ -1,4 +1,4 @@
-const API_ENDPOINT = "/weather/api";
+const API_ENDPOINT = "/weather/v1";
 const WEATHER_CODES = {
   0: "Unknown",
   1000: "Clear, Sunny",
